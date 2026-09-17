@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>جدول الاختبارات النهائية | الكلية التقنية بالمدينة المنورة</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0b6b57;--g2:#064f43;--g3:#11816a;--lime:#c8d94b;--bg:#f4f7f6;--white:#fff;--ink:#17352e;--muted:#687b75;--line:#dce7e3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Cairo,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.page{display:none}.page.active{display:block}
+header{height:82px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px rgba(18,65,53,.04)}
+.head{display:flex;align-items:center;justify-content:space-between;gap:20px}.identity{display:flex;align-items:center;gap:14px}.logo{height:58px;max-width:160px;object-fit:contain}.identity-line{width:1px;height:38px;background:#d6e1dd}.identity-text{display:flex;flex-direction:column;align-items:center;text-align:center;line-height:1.65}.identity-text strong,.identity-text span{font-size:12px;font-weight:700;color:#24443b}
+nav{display:flex;gap:5px}nav button{border:0;background:none;cursor:pointer;color:#425e57;font:600 13px Cairo;padding:11px 15px;border-radius:8px}nav button:hover{background:#edf5f2;color:var(--g)}
+.cover{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,transparent 0 78%,rgba(255,255,255,.035) 78% 79%,transparent 79% 100%),linear-gradient(45deg,transparent 0 84%,rgba(255,255,255,.03) 84% 85%,transparent 85% 100%),linear-gradient(115deg,var(--g2),var(--g) 60%,#0b745e);padding:78px 0 108px}
+.cover:before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 82% 22%,rgba(255,255,255,.055) 0 2px,transparent 3px),linear-gradient(30deg,rgba(255,255,255,.035) 12%,transparent 12.5%,transparent 87%,rgba(255,255,255,.035) 87.5%),linear-gradient(150deg,rgba(255,255,255,.035) 12%,transparent 12.5%,transparent 87%,rgba(255,255,255,.035) 87.5%);background-size:70px 120px;opacity:.7}
+
+.coverin{position:relative;display:block}
+.coverin:before,.coverin:after{content:"";position:absolute;pointer-events:none;z-index:0}
+.coverin:before{left:2%;top:-52px;width:245px;height:245px;border:24px solid rgba(255,255,255,.10);border-left-color:transparent;border-bottom-color:transparent;border-radius:48px 8px 48px 8px;transform:rotate(45deg)}
+.coverin:after{left:155px;top:48px;width:125px;height:125px;border:18px solid rgba(255,255,255,.075);border-right-color:transparent;border-top-color:transparent;border-radius:8px 36px 8px 36px;transform:rotate(45deg)}
+.coverin>div{position:relative;z-index:2}.over{font-size:14px;color:#d8ebe5;font-weight:600}
+.cover h1{font-size:clamp(30px,4.3vw,48px);line-height:1.35;margin:13px 0}.cover h1 span{display:block;font-size:.55em;font-weight:500;color:#dcebe7;margin-top:8px}.season{display:inline-block;margin-top:12px;padding:8px 14px;border-right:4px solid var(--lime);background:rgba(255,255,255,.08);border-radius:4px}
+.mark{justify-self:end;width:210px;height:210px;border-radius:50%;border:1px solid rgba(255,255,255,.14);display:grid;place-items:center}.mark:after{content:"1447";width:155px;height:155px;border-radius:50%;background:rgba(255,255,255,.07);display:grid;place-items:center;font-size:34px;font-weight:800}
+.tabsbar{background:transparent;position:relative;z-index:19}.tabs{margin-top:-35px;position:relative;z-index:3;background:#fff;border-radius:15px;box-shadow:0 14px 35px rgba(17,69,55,.12);padding:9px;display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.tab{border:0;background:#fff;padding:17px;border-radius:10px;color:#4a665f;cursor:pointer;font:700 14px Cairo}.tab.active,.tab:hover{background:#eaf4f0;color:var(--g)}
+.content{padding:52px 0 72px}.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}.section-title h2{margin:0;font-size:25px;color:#21433a}.section-title span{width:46px;height:4px;border-radius:8px;background:var(--lime)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.dept{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;min-height:150px;display:block;position:relative;transition:.2s;box-shadow:0 5px 18px rgba(21,62,52,.04)}
+.dept:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(21,62,52,.10);border-color:#bdd4cc}.deptname{display:block}.n{display:grid;width:35px;height:35px;place-items:center;background:#e9f4f0;border-radius:10px;color:var(--g);font-size:11px;font-weight:800;margin-bottom:15px}.dept h3{margin:0 0 20px;font-size:17px}.open{display:inline-block;text-decoration:none;background:var(--g);color:#fff;border:0;border-radius:8px;padding:9px 14px;font:700 12px Cairo}.open.off{background:#dce5e2;color:#7b8985;pointer-events:none}
+.innerhead{background:linear-gradient(115deg,var(--g2),var(--g));color:#fff;padding:46px 0;border-bottom:4px solid var(--lime)}.innerhead small{color:#d5e9e3}.innerhead h1{margin:6px 0 0;font-size:31px}
+.back{margin-bottom:20px;border:1px solid #c8d9d3;background:#fff;color:var(--g);padding:9px 14px;border-radius:8px;cursor:pointer;font:700 13px Cairo}.paper{background:#fff;border:1px solid var(--line);border-radius:15px;padding:30px;box-shadow:0 8px 25px rgba(20,61,51,.05)}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:11px}.rule{background:#f9fbfa;border:1px solid var(--line);border-radius:10px;padding:16px 50px 16px 16px;line-height:1.9;position:relative}.rule b{position:absolute;right:14px;top:15px;color:var(--g);background:#e8f3ef;border-radius:7px;padding:3px 6px}
+.group+.group{margin-top:30px}.group h2{font-size:20px;color:var(--g);padding-bottom:10px;border-bottom:1px solid var(--line)}.group p,.group li{line-height:2}.group li{margin:5px 0}
+footer{background:#123d34;color:#d5e3df;padding:24px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px}
+@media(max-width:820px){nav{display:none}.identity-text strong,.identity-text span{font-size:11px}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){header{height:72px}.logo{height:46px;max-width:105px}.identity{gap:9px}.identity-line{height:32px}.identity-text strong,.identity-text span{font-size:9px}.cover{padding:50px 0 72px}.cover h1{font-size:27px}.tabs{grid-template-columns:1fr;margin-top:-25px}.tab{padding:13px}.grid,.rules{grid-template-columns:1fr}.paper{padding:18px}.content{padding-top:38px}}
+</style></head>
+<body>
+<header><div class="wrap head">
+<div class="identity"><img class="logo" src="https://uc6b123fbe4a7ab231bc843dd623.dl.dropboxusercontent.com/cd/0/inline/DIVo_adZzayHg-tSXlFW4plTR9RfPzBwF_8erPak7RYM5kk2SWQol2MKrb54G_uynHJ-0ZVtc-AFGQeANU6RaL00GfD_IQpHXheEOd98YKyHau6rqJrhhk5slN13HP0IABcrQrqjVxRg4Oeais9RN8Y8/file" alt="شعار المؤسسة"><div class="identity-line"></div><div class="identity-text"><strong>المؤسسة العامة للتدريب التقني والمهني</strong><span>الكلية التقنية بالمدينة المنورة</span></div></div>
+
+</div></header>
+<section class="cover"><div class="wrap coverin"><div><h1>جدول الاختبارات النهائية<span>للفصل التدريبي الثاني لعام 1447</span></h1></div></div></section>
+<div class="tabsbar"><div class="wrap tabs">
+<button class="tab active" data-target="home" onclick="show('home')">جدول الاختبارات النهائية</button>
+<button class="tab" data-target="guide" onclick="show('guide')">تعليمات الاختبارات</button>
+<button class="tab" data-target="retake" onclick="show('retake')">تعليمات إعادة الاختبار</button>
+</div></div>
+
+
+<main id="home" class="page active">
+
+
+
+<section class="content"><div class="wrap"><div id="grid" class="grid"></div></div></section>
+</main>
+
+<main id="guide" class="page">
+
+<section class="content"><div class="wrap"><div class="paper">
+<div class="group"><h2>تعليمات الاختبارات النهائية</h2></div>
+<div class="rules">
+<div class="rule"><b>01</b>لا يسمح بالدخول لقاعة الاختبار بعد مضي نصف زمن الامتحان.</div>
+<div class="rule"><b>02</b>لا يسمح بالخروج من قاعة الاختبار إلا بعد مضي نصف زمن الامتحان.</div>
+<div class="rule"><b>03</b>إبراز بطاقة المتدرب أو الهوية الوطنية.</div>
+<div class="rule"><b>04</b>يمنع من استخدام الجوالات والسماعات والساعات الذكية أثناء الاختبار.</div>
+<div class="rule"><b>05</b>في حال الغش أو محاولة الغش تطبق اللوائح التي تعرض المتدرب للرسوب.</div>
+<div class="rule"><b>06</b>يحق للمتدرب طلب إعادة مراجعة أوراق الإجابة وفق الإجراءات المعتمدة.</div>
+<div class="rule"><b>07</b>عند الغياب لن يتم إعادة الاختبار بدون عذر يتقدم به إلى وكالة شؤون المتدربين.</div>
+<div class="rule"><b>08</b>محروم لا يسمح له بدخول قاعة الاختبار.</div>
+<div class="rule"><b>09</b>الالتزام بالزي الرسمي كاملاً والمظهر العام.</div>
+</div></div></div></section></main>
+
+<main id="retake" class="page">
+
+<section class="content"><div class="wrap"><div class="paper">
+<div class="group"><h2>تعليمات إعادة الاختبار</h2><p>إذا تغيب المتدرب عن الاختبار النهائي لعذر قاهر (حسب الأعذار المقبولة) فيمكنه التقدم إلى وكالة شؤون المتدربين بطلب إعادة التقييم (الاختبار) مع إرفاق العذر على أن يكون الاختبار البديل خلال مدة لا تتجاوز نهاية الأسبوع الأول من الفصل الذي يليه.</p></div>
+<div class="group"><h2>الأعذار المقبولة</h2><ul><li>العمليات الجراحية الضرورية الطارئة أو الأمراض المعدية الخطيرة بموجب تقرير طبي معتمد.</li><li>مرافقة قريب من الدرجة الأولى في مستشفى بموجب تقرير طبي معتمد.</li><li>الإيقاف من قبل الجهات الأمنية في حادث مروري أو ما شابه بخطاب رسمي مصدق من الجهة الأمنية.</li><li>وفاة قريب من الدرجة الأولى خلال الأيام الثلاثة الأولى من الوفاة بموجب تقرير رسمي.</li></ul></div>
+<div class="group"><h2>طلب مراجعة التقييم في المادة</h2><p>يحق للمتدرب طلب مراجعة تقييمه في المادة حسب الضوابط التالية:</p><ul><li>أن يتقدم بطلب مراجعة تقييمه إلى رئيس القسم خلال مدة لا تتجاوز الأسبوع الأول من الفصل التدريبي التالي.</li><li>ألا يكون قد سبق للمتدرب أن تقدم بطلب إعادة التقييم للمقرر نفسه، وثبت عدم صحة طلبه.</li><li>يدفع المتدرب مبلغ (250) ريالاً لأمين صندوق المتدربين الفرعي، تعاد له في حال ثبوت خطأ.</li></ul></div>
+</div></div></section></main>
+
+<footer><div class="wrap foot"><span>الكلية التقنية بالمدينة المنورة</span><span>الاختبارات النهائية 1447</span></div></footer>
+<script>
+const deps=["تقنية المعلومات","التقنية الميكانيكية","التقنية الكهربائية","التقنية الإلكترونية","تقنية الأعمال","التقنية الخاصة"];
+const urls=["#","#","#","#","#","#"];
+document.getElementById("grid").innerHTML=deps.map((d,i)=>`<div class="dept"><div class="deptname"><span class="n">0${i+1}</span><h3>${d}</h3></div><a class="open ${urls[i]=="#"?"off":""}" href="${urls[i]}" target="_blank">عرض PDF</a></div>`).join("");
+function show(id){
+ document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));
+ document.getElementById(id).classList.add("active");
+ document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x.dataset.target===id));
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+</script></body></html>
