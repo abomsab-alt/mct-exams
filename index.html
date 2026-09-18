@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>جدول الاختبارات النهائية | الكلية التقنية بالمدينة المنورة</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -82,7 +84,7 @@ footer{background:#123d34;color:#d5e3df;padding:24px 0;font-size:12px}.foot{disp
 <script>
 const deps=["تقنية المعلومات","التقنية الميكانيكية","التقنية الكهربائية","التقنية الإلكترونية","تقنية الأعمال","التقنية الخاصة"];
 const urls=["#","#","#","#","#","#"];
-document.getElementById("grid").innerHTML=deps.map((d,i)=>`<div class="dept"><div class="deptname"><span class="n">0${i+1}</span><h3>${d}</h3></div><a class="open ${urls[i]=="#"?"off":""}" href="${urls[i]}" target="_blank">عرض PDF</a></div>`).join("");
+document.getElementById("grid").innerHTML=deps.map((d,i)=>`<div class="dept"><div class="deptname"><span class="n">0${i+1}</span><h3>${d}</h3></div><a class="open ${urls[i]=="#"?"off":""}" href="${urls[i]}" target="_blank" rel="noopener noreferrer">عرض PDF</a></div>`).join("");
 function show(id){
  document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));
  document.getElementById(id).classList.add("active");
